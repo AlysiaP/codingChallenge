@@ -1,12 +1,15 @@
 /* General Styles */
 body {
-    font-family: Ubuntu, "times new roman", times, roman, serif;
+    font-family: Ubuntu, san-serif;
     background: url('../_images/bsqueezed_bg_light.jpg') repeat;
+    bottom: 10px;
 }
+
 a:hover {
 	color: #4cb4e7;
 	text-decoration: none;
 }
+/* End General Styles */
 
 /* Header Styles */
 .introduction {
@@ -24,7 +27,7 @@ a:hover {
     margin-top: 20px;
 }
 .headingContent h2 {
-	font-size: 26px;
+	font-size: 25px;
     line-height: 35px;
 }
 .greenOut {
@@ -34,6 +37,12 @@ a:hover {
 	color: #792881;
 	font-weight: bold;
 }
+/* Light Body */
+.lightBody {
+	background: url('../_images/bsqueezed_bg_light.jpg') repeat;
+	top: -5px;
+}
+/* End Header Styles*/
 
 /* Left Side - Content Styles */
 .content {
@@ -50,13 +59,14 @@ li span {
 	width: 1em;
 	margin-left: -1em
 }
+/* End Left Side - Content Styles*/
 
 /* Right Side - Form Styles */
 .stackable {
 	float: left;
 	clear: both;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 12px;
 	border: 1px solid #c8c8c4;;
 	margin: 5px 0px;
 	color: #c8c8c4;
@@ -64,22 +74,15 @@ li span {
 	background: #f5f8e9;
 }
 
-.triangleUp {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
-}
 .balcomForm {
+	/* Used http://bennettfeely.com/clippy/ to help with points in clip-path CSS*/
 	-webkit-clip-path: polygon(44% 5%, 50% 0, 56% 5%, 100% 5%, 100% 81%, 50% 100%, 0 81%, 0 5%);
 	clip-path: polygon(44% 5%, 50% 0, 56% 5%, 100% 5%, 100% 81%, 50% 100%, 0 81%, 0 5%);
 	background-color: #b0d136;
-	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	/* Note: Drop Shadow for custom CSS shape will only show with position: sticky; or position fixed; - not great for keeping responsiveness in tact */
+	/*-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
 	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-	filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));*/
 	padding: 45px 35px 35px;
 	height: 400px;
 	top: -30px;
@@ -90,13 +93,38 @@ li span {
 	padding: 15px 5px 85px;
 }
 
-.submitAction {
-	background-color: #792881;
-	color: white;
-	    height: 50px;
-    width: 175px;
-    border: 1px solid #f5f8e9;
+.submitButtonWrap {
+	display: block;
+    clear: both;
+    padding: 2px;
+    width: 171px;
+    border-radius: 14px;
+    border: 1px solid #809531;
+    margin: 0px auto;
+    background: #f5f8e9;
+    height: 56px;
 }
+
+/* Gradient from light shade on top to dark shade on bottom */
+.submitAction {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7a2982), color-stop(1, #681171) );
+	background: -moz-linear-gradient( center top, #7a2982 5%, #681171 100% );
+	background-color: #7a2982;
+	color: white;
+	height: 50px;
+    width: 165px;
+    margin: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 0px;
+}
+
+/* Flip gradient on hover */
+.submitAction:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #681171), color-stop(1, #7a2982) );
+	background: -moz-linear-gradient( center top, #681171 5%, #7a2982 100% );
+	background-color: #681171;
+}
+/* End Right Side - Form Styles */
 
 /* Footer Styles*/
 footer {
@@ -108,13 +136,41 @@ footer {
 	height: 50px;
 	border: none;
 }
+
+.forwardButtonWrap {
+	display: block;
+	clear: both;
+	padding: 2px;
+	width: 84px;
+	border-radius: 7px;
+	margin: 0px auto;
+	background: #9a9a9a; /* For browsers that do not support gradients*/
+    background: -webkit-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Safari */
+    background: -moz-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Mozilla Firefox */
+    background: linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Standard */
+}
+
+/* Light gradient from light shade on top to dark shade on bottom */
 .forwardButton {
 	color: #792881;
+	background-color: #ededed; /* For browsers that do not support gradients*/
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) ); /* Safari */
+	background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% ); /* Mozilla Firefox */
+	background: linear-gradient(#ededed, #dfdfdf); /* Standard */
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border: none;
+}
+
+/* Flip gradient on hover */
+.forwardButton:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
 	background-color: #dfdfdf;
-	border-radius: 5px;
-	margin-bottom: 35px;
 }
 
 .copyright {
-	margin-top: 100px;
+	margin-top: 70px;
+	margin-bottom: 40px;
 }
+/* End Footer Styles*/
