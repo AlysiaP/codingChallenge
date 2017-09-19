@@ -90,7 +90,7 @@ li span {
 
 .messageText {
 	height: 100px;
-	padding: 15px 5px 85px;
+	padding-left: 10px;
 }
 
 .submitButtonWrap {
