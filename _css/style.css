@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    background: url('../_images/bsqueezed_bg_light.jpg') repeat;
+}
+a:hover {
+	color: #4cb4e7;
+	text-decoration: none;
+}
+
+/* Header Styles */
+.introduction {
+	background: url('../_images/bsqueezed_bg_dark.jpg');
+	color: white;
+}
+.balcomLogo {
+	display: block;
+	padding-top: 15px;
+    height: 195px;
+    margin: 0px auto;
+}
+.headingContent {
+	padding-left: 0px;
+    margin-top: 20px;
+}
+.headingContent h2 {
+	font-size: 26px;
+    line-height: 35px;
+}
+.greenOut {
+	color: #b0d136;
+}
+.purpleOut {
+	color: #792881;
+	font-weight: bold;
+}
+
+/* Left Side - Content Styles */
+.content {
+	padding-top: 25px;
+	margin-bottom: 35px;
+}
+ul {
+	list-style: none;
+}
+
+li span {
+	color: #792881;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em
+}
+
+/* Right Side - Form Styles */
+.stackable {
+	float: left;
+	clear: both;
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid #c8c8c4;;
+	margin: 5px 0px;
+	color: #c8c8c4;
+	padding-left: 10px;
+	background: #f5f8e9;
+}
+
+.triangleUp {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+.balcomForm {
+	-webkit-clip-path: polygon(44% 5%, 50% 0, 56% 5%, 100% 5%, 100% 81%, 50% 100%, 0 81%, 0 5%);
+	clip-path: polygon(44% 5%, 50% 0, 56% 5%, 100% 5%, 100% 81%, 50% 100%, 0 81%, 0 5%);
+	background-color: #b0d136;
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+	padding: 45px 35px 35px;
+	height: 400px;
+	top: -30px;
+}
+
+.messageText {
+	height: 100px;
+	padding: 15px 5px 85px;
+}
+
+.submitAction {
+	background-color: #792881;
+	color: white;
+	    height: 50px;
+    width: 175px;
+    border: 1px solid #f5f8e9;
+}
+
+/* Footer Styles*/
+footer {
+	text-align: center;
+}
+
+.bsqueezed-bee {
+	background: url('../_images/bsqueezed_bee.png') no-repeat center;
+	height: 50px;
+	border: none;
+}
+.forwardButton {
+	color: #792881;
+	background-color: #dfdfdf;
+	border-radius: 5px;
+	margin-bottom: 35px;
+}
+
+.copyright {
+	margin-top: 100px;
+}
