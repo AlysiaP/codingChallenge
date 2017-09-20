@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: Ubuntu, san-serif;
-    background: url('../_images/bsqueezed_bg_light.jpg') repeat;
-    bottom: 10px;
+        font-family: Ubuntu, san-serif;
+        background: url('../_images/bsqueezed_bg_light.jpg') repeat;
+        bottom: 10px;
 }
 
 a:hover {
@@ -19,16 +19,16 @@ a:hover {
 .balcomLogo {
 	display: block;
 	padding-top: 15px;
-    height: 195px;
-    margin: 0px auto;
+        height: 195px;
+        margin: 0px auto;
 }
 .headingContent {
 	padding-left: 0px;
-    margin-top: 20px;
+        margin-top: 20px;
 }
 .headingContent h2 {
 	font-size: 25px;
-    line-height: 35px;
+        line-height: 35px;
 }
 .greenOut {
 	color: #b0d136;
@@ -68,7 +68,7 @@ li span {
 	width: 100%;
 	border-radius: 12px;
 	border: 1px solid #c8c8c4;;
-	margin: 5px 0px;
+	margin: 7px 0px;
 	color: #c8c8c4;
 	padding-left: 10px;
 	background: #f5f8e9;
@@ -95,14 +95,14 @@ li span {
 
 .submitButtonWrap {
 	display: block;
-    clear: both;
-    padding: 2px;
-    width: 171px;
-    border-radius: 14px;
-    border: 1px solid #809531;
-    margin: 0px auto;
-    background: #f5f8e9;
-    height: 56px;
+        clear: both;
+        padding: 2px;
+        width: 171px;
+        border-radius: 7px;
+        border: 1px solid #809531;
+        margin: 5px auto;
+        background: #f5f8e9;
+        height: 41px;
 }
 
 /* Gradient from light shade on top to dark shade on bottom */
@@ -111,11 +111,12 @@ li span {
 	background: -moz-linear-gradient( center top, #7a2982 5%, #681171 100% );
 	background-color: #7a2982;
 	color: white;
-	height: 50px;
-    width: 165px;
-    margin: 0px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border: 0px;
+	height: 35px;
+        width: 165px;
+        margin: 0px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border: 0px;
+        border-radius: 5px;
 }
 
 /* Flip gradient on hover */
@@ -141,18 +142,19 @@ footer {
 	display: block;
 	clear: both;
 	padding: 2px;
-	width: 84px;
+	width: 104px;
 	border-radius: 7px;
 	margin: 0px auto;
 	background: #9a9a9a; /* For browsers that do not support gradients*/
-    background: -webkit-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Safari */
-    background: -moz-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Mozilla Firefox */
-    background: linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Standard */
+	background: -webkit-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Safari */
+	background: -moz-linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Mozilla Firefox */
+	background: linear-gradient(#9a9a9a, #d7d7d7 95%, #9a9a9a); /* Standard */
 }
 
 /* Light gradient from light shade on top to dark shade on bottom */
 .forwardButton {
 	color: #792881;
+  width: 100px;
 	background-color: #ededed; /* For browsers that do not support gradients*/
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) ); /* Safari */
 	background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% ); /* Mozilla Firefox */
